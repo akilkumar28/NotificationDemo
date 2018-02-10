@@ -12,7 +12,58 @@
 		897F3F71202E624F0079C831 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897F3F6F202E624F0079C831 /* Main.storyboard */; };
 		897F3F73202E624F0079C831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897F3F72202E624F0079C831 /* Assets.xcassets */; };
 		897F3F76202E624F0079C831 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897F3F74202E624F0079C831 /* LaunchScreen.storyboard */; };
+		897F3F83202E62810079C831 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897F3F81202E62810079C831 /* Interface.storyboard */; };
+		897F3F85202E62810079C831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897F3F84202E62810079C831 /* Assets.xcassets */; };
+		897F3F8C202E62820079C831 /* GlanceDemo-i Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 897F3F8B202E62820079C831 /* GlanceDemo-i Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		897F3F91202E62820079C831 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F3F90202E62820079C831 /* InterfaceController.swift */; };
+		897F3F93202E62820079C831 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F3F92202E62820079C831 /* ExtensionDelegate.swift */; };
+		897F3F95202E62820079C831 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F3F94202E62820079C831 /* NotificationController.swift */; };
+		897F3F97202E62820079C831 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 897F3F96202E62820079C831 /* ComplicationController.swift */; };
+		897F3F99202E62820079C831 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897F3F98202E62820079C831 /* Assets.xcassets */; };
+		897F3F9E202E62820079C831 /* GlanceDemo-i.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 897F3F7F202E62810079C831 /* GlanceDemo-i.app */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		897F3F8D202E62820079C831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 897F3F60202E624F0079C831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897F3F8A202E62820079C831;
+			remoteInfo = "GlanceDemo-i Extension";
+		};
+		897F3F9C202E62820079C831 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 897F3F60202E624F0079C831 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 897F3F7E202E62810079C831;
+			remoteInfo = "GlanceDemo-i";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		897F3FA2202E62820079C831 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				897F3F8C202E62820079C831 /* GlanceDemo-i Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897F3FA6202E62820079C831 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				897F3F9E202E62820079C831 /* GlanceDemo-i.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		897F3F68202E624F0079C831 /* GlanceDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlanceDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +73,29 @@
 		897F3F72202E624F0079C831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		897F3F75202E624F0079C831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		897F3F77202E624F0079C831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897F3F7F202E62810079C831 /* GlanceDemo-i.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GlanceDemo-i.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		897F3F82202E62810079C831 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		897F3F84202E62810079C831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		897F3F86202E62810079C831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897F3F8B202E62820079C831 /* GlanceDemo-i Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GlanceDemo-i Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		897F3F90202E62820079C831 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		897F3F92202E62820079C831 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		897F3F94202E62820079C831 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		897F3F96202E62820079C831 /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		897F3F98202E62820079C831 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		897F3F9A202E62820079C831 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		897F3F9B202E62820079C831 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		897F3F65202E624F0079C831 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897F3F88202E62820079C831 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +109,8 @@
 			isa = PBXGroup;
 			children = (
 				897F3F6A202E624F0079C831 /* GlanceDemo */,
+				897F3F80202E62810079C831 /* GlanceDemo-i */,
+				897F3F8F202E62820079C831 /* GlanceDemo-i Extension */,
 				897F3F69202E624F0079C831 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +119,8 @@
 			isa = PBXGroup;
 			children = (
 				897F3F68202E624F0079C831 /* GlanceDemo.app */,
+				897F3F7F202E62810079C831 /* GlanceDemo-i.app */,
+				897F3F8B202E62820079C831 /* GlanceDemo-i Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -64,6 +138,30 @@
 			path = GlanceDemo;
 			sourceTree = "<group>";
 		};
+		897F3F80202E62810079C831 /* GlanceDemo-i */ = {
+			isa = PBXGroup;
+			children = (
+				897F3F81202E62810079C831 /* Interface.storyboard */,
+				897F3F84202E62810079C831 /* Assets.xcassets */,
+				897F3F86202E62810079C831 /* Info.plist */,
+			);
+			path = "GlanceDemo-i";
+			sourceTree = "<group>";
+		};
+		897F3F8F202E62820079C831 /* GlanceDemo-i Extension */ = {
+			isa = PBXGroup;
+			children = (
+				897F3F90202E62820079C831 /* InterfaceController.swift */,
+				897F3F92202E62820079C831 /* ExtensionDelegate.swift */,
+				897F3F94202E62820079C831 /* NotificationController.swift */,
+				897F3F96202E62820079C831 /* ComplicationController.swift */,
+				897F3F98202E62820079C831 /* Assets.xcassets */,
+				897F3F9A202E62820079C831 /* Info.plist */,
+				897F3F9B202E62820079C831 /* PushNotificationPayload.apns */,
+			);
+			path = "GlanceDemo-i Extension";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,15 +172,51 @@
 				897F3F64202E624F0079C831 /* Sources */,
 				897F3F65202E624F0079C831 /* Frameworks */,
 				897F3F66202E624F0079C831 /* Resources */,
+				897F3FA6202E62820079C831 /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				897F3F9D202E62820079C831 /* PBXTargetDependency */,
 			);
 			name = GlanceDemo;
 			productName = GlanceDemo;
 			productReference = 897F3F68202E624F0079C831 /* GlanceDemo.app */;
 			productType = "com.apple.product-type.application";
+		};
+		897F3F7E202E62810079C831 /* GlanceDemo-i */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897F3FA3202E62820079C831 /* Build configuration list for PBXNativeTarget "GlanceDemo-i" */;
+			buildPhases = (
+				897F3F7D202E62810079C831 /* Resources */,
+				897F3FA2202E62820079C831 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				897F3F8E202E62820079C831 /* PBXTargetDependency */,
+			);
+			name = "GlanceDemo-i";
+			productName = "GlanceDemo-i";
+			productReference = 897F3F7F202E62810079C831 /* GlanceDemo-i.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		897F3F8A202E62820079C831 /* GlanceDemo-i Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 897F3F9F202E62820079C831 /* Build configuration list for PBXNativeTarget "GlanceDemo-i Extension" */;
+			buildPhases = (
+				897F3F87202E62820079C831 /* Sources */,
+				897F3F88202E62820079C831 /* Frameworks */,
+				897F3F89202E62820079C831 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GlanceDemo-i Extension";
+			productName = "GlanceDemo-i Extension";
+			productReference = 897F3F8B202E62820079C831 /* GlanceDemo-i Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +229,14 @@
 				ORGANIZATIONNAME = "AKIL KUMAR THOTA";
 				TargetAttributes = {
 					897F3F67202E624F0079C831 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					897F3F7E202E62810079C831 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					897F3F8A202E62820079C831 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
@@ -114,6 +256,8 @@
 			projectRoot = "";
 			targets = (
 				897F3F67202E624F0079C831 /* GlanceDemo */,
+				897F3F7E202E62810079C831 /* GlanceDemo-i */,
+				897F3F8A202E62820079C831 /* GlanceDemo-i Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -129,6 +273,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		897F3F7D202E62810079C831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897F3F85202E62810079C831 /* Assets.xcassets in Resources */,
+				897F3F83202E62810079C831 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		897F3F89202E62820079C831 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897F3F99202E62820079C831 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -141,7 +302,31 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		897F3F87202E62820079C831 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				897F3F95202E62820079C831 /* NotificationController.swift in Sources */,
+				897F3F97202E62820079C831 /* ComplicationController.swift in Sources */,
+				897F3F93202E62820079C831 /* ExtensionDelegate.swift in Sources */,
+				897F3F91202E62820079C831 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		897F3F8E202E62820079C831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897F3F8A202E62820079C831 /* GlanceDemo-i Extension */;
+			targetProxy = 897F3F8D202E62820079C831 /* PBXContainerItemProxy */;
+		};
+		897F3F9D202E62820079C831 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 897F3F7E202E62810079C831 /* GlanceDemo-i */;
+			targetProxy = 897F3F9C202E62820079C831 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		897F3F6F202E624F0079C831 /* Main.storyboard */ = {
@@ -158,6 +343,14 @@
 				897F3F75202E624F0079C831 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		897F3F81202E62810079C831 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				897F3F82202E62810079C831 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -298,6 +491,76 @@
 			};
 			name = Release;
 		};
+		897F3FA0202E62820079C831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GlanceDemo-i Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akilkumar28.GlanceDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		897F3FA1202E62820079C831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GlanceDemo-i Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = akilkumar28.GlanceDemo.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
+		897F3FA4202E62820079C831 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = GlanceDemo_i_Extension;
+				INFOPLIST_FILE = "GlanceDemo-i/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = akilkumar28.GlanceDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Debug;
+		};
+		897F3FA5202E62820079C831 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = GlanceDemo_i_Extension;
+				INFOPLIST_FILE = "GlanceDemo-i/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = akilkumar28.GlanceDemo.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -315,6 +578,24 @@
 			buildConfigurations = (
 				897F3F7B202E624F0079C831 /* Debug */,
 				897F3F7C202E624F0079C831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897F3F9F202E62820079C831 /* Build configuration list for PBXNativeTarget "GlanceDemo-i Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897F3FA0202E62820079C831 /* Debug */,
+				897F3FA1202E62820079C831 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		897F3FA3202E62820079C831 /* Build configuration list for PBXNativeTarget "GlanceDemo-i" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				897F3FA4202E62820079C831 /* Debug */,
+				897F3FA5202E62820079C831 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
