@@ -12,7 +12,15 @@
         <!--Interface Controller-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GlanceDemo_i" customModuleProvider="target"/>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="GlanceDemo_i" customModuleProvider="target">
+                    <menu key="menu" id="qSl-wD-eYR">
+                        <items>
+                            <menuItem title="Menu Item" icon="accept" id="ga6-7G-WaY"/>
+                            <menuItem title="Menu Item" icon="decline" id="MJP-Bu-NHm"/>
+                            <menuItem title="Menu Item" icon="trash" id="hwp-K0-gDC"/>
+                        </items>
+                    </menu>
+                </controller>
             </objects>
             <point key="canvasLocation" x="220" y="345"/>
         </scene>
